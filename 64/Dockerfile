@@ -1,5 +1,5 @@
 # vim: set et sw=2 ts=2 sts=2 tw=0:
-FROM jrdasm/salix-minimal:14.0
+FROM jrdasm/salix-minimal:14.1
 MAINTAINER JRD <jrd@salixos.org>
 RUN slapt-get --update && \
     slapt-get --install --no-prompt --ignore-excludes \
@@ -51,7 +51,6 @@ RUN slapt-get --update && \
       dvd+rw-tools \
       e2fsprogs \
       eject \
-      engine_pkcs11 \
       enscript \
       etc \
       ethtool \
@@ -64,6 +63,7 @@ RUN slapt-get --update && \
       fuse \
       gamin \
       gawk \
+      gc \
       gcc \
       gcc-g++ \
       gdb \
@@ -85,6 +85,7 @@ RUN slapt-get --update && \
       gptfdisk \
       grep \
       groff \
+      guile \
       gzip \
       hdparm \
       htop \
@@ -108,6 +109,7 @@ RUN slapt-get --update && \
       libcddb \
       libcdio \
       libcgroup \
+      libcroco \
       libelf \
       libffi \
       libgcrypt \
@@ -117,21 +119,26 @@ RUN slapt-get --update && \
       libksba \
       libmad \
       libmcrypt \
+      libmnl \
       libmpc \
+      libnetfilter_conntrack \
+      libnfnetlink \
       libnl \
       libnl3 \
       libogg \
-      libp11 \
       libpcap \
       libpthread-stubs \
       libraw1394 \
+      libtasn1 \
       libtermcap \
       libtool \
+      libunistring \
       libusb \
       libusb-compat \
       libvorbis \
       libxml2 \
       libzip \
+      lm_sensors \
       lndir \
       logrotate \
       lsof \
@@ -144,7 +151,6 @@ RUN slapt-get --update && \
       man-pages \
       mc \
       mdadm \
-      mercurial \
       mhash \
       mkinitrd \
       mm \
@@ -170,6 +176,7 @@ RUN slapt-get --update && \
       openssh \
       openssl \
       oprofile \
+      os-prober \
       p11-kit \
       parted \
       patch \
@@ -209,14 +216,13 @@ RUN slapt-get --update && \
       slkbuild \
       slocate \
       smartmontools \
+      spi \
       spkg \
       sqlite \
       strace \
-      subversion \
       sudo \
       sysfsutils \
       sysklogd \
-      syslinux \
       sysstat \
       sysvinit \
       sysvinit-functions \
@@ -239,6 +245,7 @@ RUN slapt-get --update && \
       vim \
       vlan \
       wget \
+      wheel-sudo \
       which \
       whois \
       xfsdump \
